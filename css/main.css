@@ -1324,40 +1324,53 @@ body {
     position: absolute;
     top: 45px;
     left: 50%;
-    transform: translate(-50%, 0);
-    text-align: center; 
-    color: #ffffff; 
+    transform: translateX(-50%);
+    text-align: center;
     font-family: 'Quicksand', sans-serif;
+    z-index: 999;
+    width: 100%;
+}
+
+/* TIAP BARIS */
+.judul h1 {
+    color: #ffffff;
     font-size: clamp(1.5rem, 5vw, 2.4rem);
     font-weight: 700;
-    z-index: 999; 
     letter-spacing: 1.5px;
-    width: 100%;
     text-transform: lowercase;
+    margin: 5px 0;
 
-    /* FIX animasi */
     opacity: 0;
     animation: zoomIn 0.8s ease forwards;
 }
 
+/* DELAY BIAR MASUK SATU-SATU */
+.judul h1:nth-child(2) {
+    animation-delay: 0.3s;
+}
+.judul h1:nth-child(3) {
+    animation-delay: 0.6s;
+}
+
+/* ANIMASI MASUK */
 @keyframes zoomIn {
     0% {
         opacity: 0;
-        transform: translate(-50%, 0) scale(0.5);
+        transform: scale(0.5);
     }
     60% {
         opacity: 1;
-        transform: translate(-50%, 0) scale(1.1);
+        transform: scale(1.1);
     }
     100% {
-        opacity: 1; /* 🔥 INI YANG KURANG */
-        transform: translate(-50%, 0) scale(1);
+        opacity: 1;
+        transform: scale(1);
     }
 }
 
-/* 🔥 NEON KHUSUS */
+/* NEON BIRU */
 .neon {
-    color: #7df9ff; /* biru terang */
+    color: #7df9ff;
     text-shadow: 
         0 0 5px #7df9ff,
         0 0 10px #7df9ff,
@@ -1367,7 +1380,6 @@ body {
     animation: neonGlow 1.5s ease-in-out infinite alternate;
 }
 
-/* Animasi neon nyala */
 @keyframes neonGlow {
     from {
         text-shadow: 

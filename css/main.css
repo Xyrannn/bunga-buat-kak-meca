@@ -41,7 +41,7 @@ body {
         filter: drop-shadow(0 0 5px #7df9ff) drop-shadow(0 0 10px #7df9ff) drop-shadow(0 0 20px #00eaff);
     }
     to {
-        filter: drop-shadow(0 0 10px #ffffff) drop-shadow(0 0 20px #7df9ff) drop-shadow(0 0 30px #00eaff) drop-shadow(0 0 50px #00eaff);
+        filter: drop-shadow(0 0 5px #ffffff) drop-shadow(0 0 5px #7df9ff) drop-shadow(0 0 10px #00eaff) drop-shadow(0 0 50px #00eaff);
     }
 }
 
@@ -1414,9 +1414,9 @@ body {
     }
     to {
         text-shadow: 
-            0 0 10px #ffffff,
-            0 0 20px #7df9ff,
-            0 0 30px #00eaff,
-            0 0 50px #00eaff;
+            0 0 5px #ffffff,
+            0 0 5px #7df9ff,
+            0 0 5px #00eaff,
+            0 0 5px #00eaff;
     }
 }

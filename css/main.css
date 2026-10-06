@@ -20,6 +20,11 @@ body {
   perspective: 1000px;
 }
 
+.judul h1  {
+  font-family: "Libre Caslon Condensed", serif;
+  font-optical-sizing: auto;
+}
+
 .night {
   position: fixed;
   left: 50%;

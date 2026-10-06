@@ -28,7 +28,7 @@ body {
 .judul .kucing {
     display: block;
     height: clamp(100px, 20vh, 180px);
-    width: 250px;
+    width: 260px;
     height: auto;
     max-width: 60vw;
     margin: 20px auto 0;

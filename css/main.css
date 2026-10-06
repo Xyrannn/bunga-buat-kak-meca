@@ -28,20 +28,21 @@ body {
 .judul .kucing {
     display: block;
     height: clamp(100px, 20vh, 180px);
-    width: auto;
+    width: 250px;
+    height: auto;
     max-width: 60vw;
-    margin: 8px auto 0;
+    margin: 20px auto 0;
     opacity: 0;
-    filter: drop-shadow(0 0 5px #7df9ff) drop-shadow(0 0 10px #7df9ff) drop-shadow(0 0 20px #00eaff);
+    filter: drop-shadow(0 0 5px #7df9ff) drop-shadow(0 0 5px #7df9ff) drop-shadow(0 0 5px #00eaff);
     animation: zoomIn 0.8s ease 0.9s forwards, imgGlow 1.5s ease-in-out infinite alternate;
 }
 
 @keyframes imgGlow {
     from {
-        filter: drop-shadow(0 0 5px #7df9ff) drop-shadow(0 0 10px #7df9ff) drop-shadow(0 0 20px #00eaff);
+        filter: drop-shadow(0 0 5px #7df9ff) drop-shadow(0 0 5px #7df9ff) drop-shadow(0 0 5px #00eaff);
     }
     to {
-        filter: drop-shadow(0 0 5px #ffffff) drop-shadow(0 0 5px #7df9ff) drop-shadow(0 0 10px #00eaff) drop-shadow(0 0 50px #00eaff);
+        filter: drop-shadow(0 0 5px #ffffff) drop-shadow(0 0 5px #7df9ff) drop-shadow(0 0 5px #00eaff) drop-shadow(0 0 50px #00eaff);
     }
 }
 
